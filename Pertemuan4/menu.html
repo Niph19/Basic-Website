@@ -6,12 +6,16 @@
     <title>SMK Pesat IT Xpro - IT Expert dan Professional</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/web-icon-300x300.webp"">
 </head>
 <body>
     <div class="container">
         <!-- Navbar -->
         <div class="navbar">
-            <a href="menu.html"><img src="/aset/logo-itxpro-scaled.webp" class="nav-img"></a>
+            <a href="menu.html"><img src="/assets/logo-itxpro-scaled.webp" class="nav-img"></a>
         <div class="nav-menu"><nav>
             <ul class="nav-main">
                 <li><a href="menu.html" class="nav-button-home">BERANDA</a></li>
@@ -25,6 +29,7 @@
 
         <!-- Menu -->
         <div class="container-menu">
+            <div class="hero-content">
             <div class="container-menu-text">
                 <h3 class="menu-text1">TELAH DIPERCAYA OLEH 2000+ ORANG TUA & SISWA</h3>
                 <span class="menu-text2">Kompetensi Teruji
@@ -44,8 +49,9 @@
                 </div>
             </div>
             <div class="container-menu-img">
-                <img src="/aset/menu-img.webp" class="menu-img">
+                <img src="/assets/menu-img.webp" class="menu-img">
             </div>
+        </div>
         </div>
         <!-- Industries -->
                 
@@ -54,10 +60,10 @@
                     <b>Perusahaan tempat siswa magang dan alumni kami bekerja</b>
             </div>
                 <div class="menu-industries">
-                    <img src="/aset/telkomsat-img.webp" class="industries-img1">
-                    <img src="/aset/maxplus-img.webp" class="industries-img2">
-                    <img src="/aset/orva-img.webp" class="industries-img3">
-                    <img src="/aset/asnet-img.webp" class="industries-img4">
+                    <img src="/assets/telkomsat-img.webp" class="industries-img1">
+                    <img src="/assets/maxplus-img.webp" class="industries-img2">
+                    <img src="/assets/orva-img.webp" class="industries-img3">
+                    <img src="/assets/asnet-img.webp" class="industries-img4">
                     <h2 class="industries-text">dan <b>40+</b> Perusahaan lainnya</h2>
                 </div>
         </div>
@@ -71,9 +77,11 @@
             </div>
     <div class="programs">
         <div class="program-voc">
-            <img class="voc-pic" src="assets/Expert.webp">
+            <img class="voc-pic" src="/assets/Expert.webp">
             <br>
-            Vocational Program
+            <div class="voc-title">
+                Vocational Program
+            </div>
             <div class="voc-list">
                 <ul>
                     <li>Memiliki Portofolio Level Industri</li>
@@ -83,7 +91,9 @@
             </div>
         </div>
         <div class="program-pro">
-            Professional Program
+            <div class="pro-title">
+                Professional Program
+            </div>
             <div class="pro-list">
                 <ul>
                     <li>Berkarakter</li>
@@ -91,13 +101,14 @@
                     <li>Diterima di Dunia Usaha/Dunia Industri</li>
                     <li>Berjiwa Wirausaha</li>
                 </ul>
-                <img class="pro-pic" src="">
+                <img class="pro-pic" src="/assets/professional.webp">
             </div>
         </div>
         <div class="program-rel">
             <img class="rel-pic" src="">
             Religius Program
             <div class="rel-list">
+                <img class="rel-pic" src="/assets/Religius.webp">
                 <ul>
                     <li>Menjaga Wudhu</li>
                     <li>Shalat Dhuha</li>
@@ -111,3 +122,56 @@
         </div>
     </div>
     </div>
+
+    <!-- Gallery -->
+    <div class="gallery-container">
+        <h1 class="gallery-title">Portofolio Siswa</h1>
+        <div class="filter-btns">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="desain-grafis">Desain Grafis</button>
+            <button class="filter-btn" data-filter="desain-3d">Desain 3D</button>
+            <button class="filter-btn" data-filter="fotografi">Fotografi</button>
+        </div>
+        <div class="gallery">
+            <div class="images" data-filter="desain-grafis">
+                <img src="/assets/fanta.webp" alt="Desain Grafis">
+            </div>
+            <div class="images" data-filter="fotografi">
+                <img src="/assets/popcorn.webp" alt="Fotografi">
+            </div>
+            <div class="images" data-filter="desain-grafis">
+                <img src="/assets/totebag.webp" alt="Desain Grafis">
+            </div>
+            <div class="images" data-filter="fotografi">
+                <img src="/assets/naskun.webp" alt="Fotografi">
+            </div>
+            <div class="images" data-filter="desain-3d">
+                <img src="/assets/dapur.webp" alt="Desain 3D">
+            </div>
+            <div class="images" data-filter="fotografi">
+                <img src="/assets/parfum.webp" alt="Fotografi">
+            </div>
+            <div class="images" data-filter="desain-grafis">
+                <img src="/assets/alam.webp" alt="Desain Grafis">
+            </div>
+            <div class="images" data-filter="desain-3d">
+                <img src="/assets/dapur2.webp" alt="Desain 3D">
+            </div>
+            <div class="images" data-filter="desain-grafis">
+                <img src="/assets/holiday.webp" alt="Desain Grafis">
+            </div>
+            <div class="images" data-filter="fotografi">
+                <img src="/assets/Istana.webp" alt="Fotografi">
+            </div>
+            <div class="images" data-filter="fotografi">
+                <img src="/assets/parfum2.webp" alt="Fotografi">
+            </div>
+            <div class="images" data-filter="desain-grafis">
+                <img src="/assets/mixue.webp" alt="Desain Grafis">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </div>
+    </body>
+    </html>

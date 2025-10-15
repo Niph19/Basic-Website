@@ -1,5 +1,6 @@
 body {
     font-family: "Poppins", Sans-serif;
+    
 }
 .container {
     justify-content: center;
@@ -66,15 +67,16 @@ body {
 /* MENU */
 
 
-.container-menu {
+.hero-content {
+    width: 80%;
     height: 500px;
     display: flex;
-    padding: 0px 10px 0px 10px;
-    margin: 10px 18% 25px 19%;
+    justify-content: space-around;
+    margin: auto;
     gap: 20px;
 }
 .container-menu-text {
-    width: 450px;
+    width: 560px;
     height: auto;
     padding: 10px;
 }
@@ -214,22 +216,100 @@ body {
 .program-voc {
     background-color: #F2F5F7;
     border-radius: 18px;
-    margin-right: 15px;
-    padding: 30px;
     text-align: center;
 }
 .voc-pic {
-    width: 302.14px;
-    height: 302.14px;
+    width: 366.14px;
+    height: auto;
+}
+.voc-list {
+    text-align: left;
+}
+.voc-title {
+    color: #111518;
+    font-size: 16px;
+    font-weight: 700;
 }
 .program-pro {
     background-color: #FDEEEA;
-    padding: 30px;
     border-radius: 18px;
+}
+.pro-title {
+    color: #111518;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+.pro-pic {
+    width: 366.14px;
+    height: auto;
 }
 .program-rel {
     background-color: #F4F5F6;
-    margin-left: 15px;
     padding: 30px;
     border-radius: 18px;
+}
+.rel-pic {
+    width: 300px;
+    height: auto;
+}
+
+
+
+/* Gallery */
+
+
+
+.gallery-container {
+    font-family: "Poppins", sans-serif;
+    max-width: 1100px;
+    margin: auto;
+}
+.gallery-title {
+    text-align: center;
+    font-size: 43px;
+    color:#0c084c;
+    font-weight: 600;
+}
+.filter-btns {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.filter-btn {
+    font-family: "poppins", sans-serif;
+    background: none;
+    border: 1px solid #f2f5f7; 
+    background-color: #f2f5f7;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 5px;
+    box-shadow: 0 8px 20px rgb(0,0,0,0.15);
+
+}
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #ff6b00;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, 0.3s ease;
+    box-shadow: 0 8px 20px rgb(0,0,0,0.15);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.images {
+    width: 23%;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all 0.5 ease;
+}
+.images img {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+.images:hover {
+    transform: scale(1.05)
 }
