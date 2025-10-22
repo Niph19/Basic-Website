@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 90%;
+      height: 50%;
+      margin-top: 200px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 75%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+        .bottom-left {
+    position: absolute;
+    bottom: 13%;
+    left: 15%;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/assets/wolfgang-hasselmann-p4x69RRngOM-unsplash.jpg">
+        <div class="bottom-left">Wolfgang Hasselmann</div>
+    </div>
+      <div class="swiper-slide">
+        <img src="https://plus.unsplash.com/premium_photo-1749826524311-4cf85f536e41?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500">
+        <div class="bottom-left">Joshua Earle</div>
+    </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1760976158531-d55dba9147a1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500">
+        <div class="bottom-left">Wolfgang Hasselmann</div>
+    </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1760867191563-791f803e1bcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500">
+        <div class="bottom-left">Andrea Caramello</div>
+    </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1760979219056-20bc838d2234?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500">
+        <div class="bottom-left">Luca Ercolani</div>
+    </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1760648149145-560e619098ef?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500">
+        <div class="bottom-left">Andreas Slotosch</div>
+    </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1760952922001-9b63c55329eb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500">
+        <div class="bottom-left">Jonny Gios</div>
+    </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1760645612662-deb9bea40aaa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM1fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500">
+        <div class="bottom-left">Lianhao Qu</div>
+    </div>
+      <div class="swiper-slide">
+        <img src="https://plus.unsplash.com/premium_photo-1749723953267-5cd90d3bac03?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500">
+        <div class="bottom-left">Joshua Earle</div>
+    </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

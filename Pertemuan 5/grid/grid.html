@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Grid</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: "konten1 konten2 konten3 konten4";
+            gap: 20px;
+        }
+        .container .satu {
+            grid-area: konten1;
+            grid-template-rows: 1fr;
+        }
+        .container .dua {
+            grid-area: konten2;
+            grid-template-rows: 1fr;
+        }
+        .container .tiga {
+            grid-area: konten3;
+            grid-template-rows: 1fr;
+        }
+        .container .empat {
+            grid-area: konten4;
+            grid-template-rows: 1fr;
+        }
+
+        .container2 {
+            display: grid;
+            grid-template-areas: "bagian1 bagian2 bagian3 bagian4";
+            gap: 30px;
+        }
+        .container2 .eins {
+            grid-area: bagian1;
+            background-color: red;
+            grid-template-rows: 1fr;
+        }
+        .container2 .zwei {
+            grid-area: bagian2;
+            background-color: orange;
+        }
+        .container2 .drei {
+            grid-area: bagian3;
+            background-color: blue;
+        }
+        .container2 .vier {
+            grid-area: bagian4;
+            background-color: violet;
+        }
+        html,
+    body {
+    position: relative;
+    height: 100%;
+    }
+
+    body {
+    background: #000;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    }
+
+    .swiper {
+    width: 100%;
+    height: 100%;
+    }
+
+    .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="satu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde similique possimus voluptas fugiat quam veniam tenetur quasi eligendi at iusto dolores exercitationem suscipit pariatur rem saepe quia, cum atque sapiente?</div>
+            <div class="dua">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque incidunt consectetur consequuntur nisi odit asperiores esse aut sint magni et.</div>
+            <div class="tiga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo eius veniam repellendus ipsam quod assumenda sit ipsa ex tenetur, natus pariatur tempora, dignissimos enim illo nostrum soluta dolore voluptatem.</div>
+            <div class="empat">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore optio dolorum enim, quasi eveniet beatae nemo, est ipsa culpa quos nesciunt nihil consectetur. Voluptatibus voluptate rem provident laborum, explicabo repellat.</div>
+        </div>
+        <div class="container2">
+            <div class="eins">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vero, dicta saepe explicabo numquam neque aliquid veniam ipsa sed quaerat.
+            </div>
+            <div class="zwei">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores delectus ullam illo ipsa sit eum saepe? Ducimus, quos molestiae!
+        </div>
+        <div class="drei">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum architecto officiis recusandae sit necessitatibus deleniti laborum a. Quo, at aperiam?
+        </div>
+        <div class="vier">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi tempore est autem possimus sint excepturi accusamus delectus, esse expedita illum.
+        </div>
+        </div>
+        <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1669750822199-fc9114724dd4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"></div>
+    <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1669750822199-fc9114724dd4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"></div>
+    <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1669750822199-fc9114724dd4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"></div>
+    <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1669750822199-fc9114724dd4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"></div>
+    <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1669750822199-fc9114724dd4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"></div>
+    <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1669750822199-fc9114724dd4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"></div>
+    <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1669750822199-fc9114724dd4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"></div>
+    <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1669750822199-fc9114724dd4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"></div>
+    <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1669750822199-fc9114724dd4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"></div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>var swiper = new Swiper(".mySwiper", {});</script>
+</body>
+</html>

@@ -540,18 +540,18 @@ max-width: 1100px;
     font-weight: 300;
 }
 .button-portofolio-dkv {
-/* display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 18px;
+    font-size: 12px;
     background-color: #0C084C;
-    color: #111827;
-    border: 1px solid #e6e6e9;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 14px;
-    text-decoration: none; */
+    padding: 8px 14px 8px 14px; 
+    border-radius: 3px;
 }
+.button-portofolio-dkv a {
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    
+}
+
 
 /* Gallery */
 

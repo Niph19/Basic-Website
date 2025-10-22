@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+* {
+    box-sizing: border-box;
+}
+.container-login {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    max-width: 100%;
+    margin-top: 5%;
+}
+.container-left {
+    width: 550px;
+    padding: 5% 0px 30% 5%;
+    background-color: #365ebf;
+    border-end-start-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.container-right {
+    background-color: #ffffffff;
+    width: 550px;
+    padding: 50px;
+    border-end-end-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.container-input-login {
+    margin-bottom:px;
+    justify-content: center;
+    align-items: center;
+}
