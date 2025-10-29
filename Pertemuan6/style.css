@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    justify-content: center;
+}
+.judul {
+    text-align: center;
+    background-color: red;
+    align-items: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.card1 {
+    background-color: blue;
+}
+.card2 {
+    background-color: yellow;
+}
+.card3 {
+    background-color: purple;
+}

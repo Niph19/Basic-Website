@@ -1,0 +1,55 @@
+@media screen and (max-width: 600px) {
+    .navbar {
+        margin: 0;
+    }
+    .container-menu-text {
+        width: 94%;
+    }
+    .menu-text1 {
+        font-size: 16px;
+        line-height: 1;
+    }
+    .menu-text2 {
+        font-size: 43px;
+        
+    }
+    .menu-list-button {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .hero-content {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+    .container-menu-img {
+        width: 350px;
+        height: 280px;
+    }
+    .menu-img {
+        width: 350px ;
+    }
+    .menu-text-industries {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .menu-industries {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-programs {
+        margin: 70px 16% 0px 16%;
+    }
+    .program-text
+    .program-text1 {
+        width: 280px;
+    }
+    .programs {
+        display: flex;
+        flex-direction: column;
+    }
+    .jurusan {
+        display: flex;
+        flex-direction: column;
+    }
+}

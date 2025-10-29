@@ -1,0 +1,12 @@
+@media screen and (max-width: 800px) {
+    .card {
+    display:flex;
+    flex-direction: column;
+    }
+    .judul {
+        background-color: blue;
+    }
+    #jurusan {
+        background-color: red
+    }
+}
